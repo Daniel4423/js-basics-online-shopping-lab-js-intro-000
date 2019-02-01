@@ -43,10 +43,16 @@ function total() {
 }
 
 function removeFromCart(item) {
+<<<<<<< HEAD
   console.log(cart);
   var itemIndex
   for (var i = 0; i < cart.length; i++) {
     if ( cart[i].itemName === item ) {
+=======
+  var itemIndex
+  for (var i = 0; i < cart.length; i++) {
+    if ( (cart[i].itemName) === item ) {
+>>>>>>> fee8f66fe33cfe52c8867c95c7a08f23b26a53fb
       itemIndex = i;
       break;
     } else {
@@ -54,7 +60,11 @@ function removeFromCart(item) {
     }
   }
   if (itemIndex > -1) {
+<<<<<<< HEAD
     cart.splice(itemIndex, 1);
+=======
+    cart = cart.splice(itemIndex, 1);
+>>>>>>> fee8f66fe33cfe52c8867c95c7a08f23b26a53fb
     return cart;
   } else {
     return "That item is not in your cart."
